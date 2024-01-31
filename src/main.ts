@@ -1,13 +1,5 @@
 import { app, BrowserWindow } from 'electron';
-import express, { Application } from 'express';
-
-const PORT : number = 1266;
-const ADDRESS : string = '0.0.0.0';
-const serv : Application = express();
-
-serv.use('/', express.static(__dirname + '/../ui/dist/ui/browser/'));
-
-serv.listen(PORT, ADDRESS, () => console.log('Server started successfully!'));
+import { ADDRESS, PORT } from './server.js';
 
 let window : BrowserWindow;
 
