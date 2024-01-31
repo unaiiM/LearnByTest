@@ -1,4 +1,4 @@
-import Database, { Test, Tests, Question } from "../db";
+import Database, { Test, Tests, Question } from "../db/index.js";
 
 export interface TestDto {
     oid : string;

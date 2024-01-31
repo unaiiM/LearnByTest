@@ -1,5 +1,6 @@
 {
   "name": "learnbytest",
+  "type": "module",
   "version": "1.0.0",
   "description": "app",
   "main": "index.js",

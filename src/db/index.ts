@@ -1,6 +1,7 @@
 import { JSONFile, JSONFilePreset } from 'lowdb/node'
 import { EventEmitter } from 'events';
 import { Low } from 'lowdb/lib';
+import { fileURLToPath } from 'url';
 
 export interface Structure {
     tests : Tests;
@@ -21,6 +22,11 @@ export interface Question {
     good : number;
     bad : number;
 };
+
+import path from 'node:path';
+
+// @ts-ignore
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default class Database {
 
