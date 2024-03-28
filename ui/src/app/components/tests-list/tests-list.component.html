@@ -1,0 +1,14 @@
+<section class="list">
+    <div class="item">
+        <div *ngFor="let item of list;" class="item-inner">
+            <div class="item-front-side">
+                <p class="item-title">{{item.name}}</p>
+                <p class="item-description">{{item.description}}</p>
+            </div>
+            <div class="item-back-side">
+                <button id="edit-button">Edit</button>
+                <button id="play-button">Play</button>
+            </div>
+        </div>
+    </div>
+</section>
